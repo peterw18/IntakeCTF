@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Rumble</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the challenge!</h1>
+        <p>You need to find the flag by signing up to this application.</p>
+        
+        <form id="loginForm" action="login.php" method="POST">
+            <h2>Sign Up</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div id="flagContainer" style="display:none;">
+            <h2>Welcome!</h2>
+            <p style="overflow-wrap: break-word;">Your flag is: <span id="flag"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
