@@ -1,0 +1,277 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    background-color: #cfcdcd;
+}
+
+#header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #212121;
+    z-index: 3;
+}
+
+
+/*.container {
+    text-align: center;
+}*/
+
+.child {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.left {
+    text-align: left;
+    flex: 1;
+    padding: 1rem;
+}
+.right {
+    flex: 1;
+    text-align: right;
+    padding: 1rem;
+}
+
+#menu, #branding {
+    color: whitesmoke;
+}
+#branding{
+    font-family: Rubik;
+}
+#menu{
+    font-family: Yantramanav;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.menu-link{
+    font-weight: 600;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: .2s;
+    padding: 1rem;
+}
+.menu-link:hover{
+    color: #67c480;
+    transition: .2s;
+}
+.menu-link:active{
+    color: #2aab4c;
+    transition: .2s;
+}
+#logo{
+    height: 2.5rem;
+    padding-right: 1rem;
+}
+.title{
+    margin: 0;
+}
+
+#main-content {
+    width: 100%;
+    padding: 5vh 0 0 0;
+}
+#banner{
+    background-color: #cfcdcd;
+    min-height: 63vh;
+    width: 100%;
+}
+#key-hand {
+    display: block;
+    position: absolute;
+    right: 0;
+    height:60vh;
+    width: 65vw;
+    z-index: 1;
+    flex: 2;
+}
+#trapezoid-style {
+    border-bottom: 60vh solid #2aab4c;
+	border-left: 30vh solid transparent;
+    height: 0;
+	width: 10%;
+    position: absolute;
+    right: 0;
+}
+#key-text{
+    margin-left: calc((85% - 65vw) / 2);
+    margin-top: 3vh;
+    font-size: 1.2vw;
+    font-family: Rubik;
+}
+#info{
+    background: rgb(207,205,205);
+    background: linear-gradient(180deg, rgba(207,205,205,1) 0%, rgba(255,255,255,1) 21%, rgba(255,255,255,1) 100%);
+}
+
+#mini-container{
+    display: flex;
+}
+
+.info-col{
+    padding: 25vh 4vw 25vh 4vw;
+    flex: 4;
+    text-align: center;
+}
+
+.mini-logo {
+    width: 6vw;
+}
+.mini-header{
+    font-family: Yantramanav;
+    font-size: 3vh;
+}
+.mini-expl{
+    font-family: Rubik;
+    font-size: 1.5vh;
+}
+#arrow-down{
+    width: 100%;
+    text-align: center;
+    font-family: Rubik;
+    color: #67c480;
+    font-size: 10vh;
+    cursor: pointer;
+    transition: .1s;
+}
+#arrow-down:hover{
+    color: #3d774d;
+    transition: .2s;
+}
+#footer-text{
+    padding-left: 2vw;
+    font-family: Rubik;
+}
+.introductions{
+    flex: 4;
+    padding-right: 2vw;
+}
+#intro-cont{
+    display: flex;
+    max-width: 35vw;
+}
+.photo-circle{
+    height: 6vw;
+    width: 6vw;
+    border-radius: 3vw;
+    border: 5px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ceo-pfp{
+    background-image: url('./assets/ceo.png');
+}
+#cmo-pfp{
+    background-image: url('./assets/cmo.png');
+}
+#cfo-pfp{
+    background-image: url('./assets/cfo.png');
+}
+#ciso-pfp{
+    background-image: url('./assets/ciso.png');
+}
+.intro-det{
+    font-family: Rubik;
+    font-size: 0.8vw;
+    margin: 0;
+}
+.intro-name{
+    font-family: Yantramanav;
+    margin: 0;
+    padding-top: 1vh;
+    font-size: 1vw;
+}
+.padded{
+    padding-top: 1vh;
+}
+#info-cont{
+    padding: 20vh 0 3vh 0;
+    display: flex;
+}
+#maps-location{
+    margin-left: 5vw;
+    border-radius: 1vh;
+    float: right;
+}
+.info-about{
+    font-family: Rubik;
+    padding: 0 1vw 0 1vw;
+    flex: 2;
+}
+.form-input{
+    border-radius: 0.4vw;
+    height: 3vh;
+    line-height: 3vh;
+    font-size: 1.2vh;
+    margin-bottom: 0.5vh;
+    color: black;
+    background-color: #a7a6a6;
+    border: #212121 solid 3px;
+    outline: none;
+    transition: .2s ease height;
+    padding-left: 5px;
+}
+.form-input:focus{
+    border: #2f7341 solid 3px;
+    transition: .2s;
+}
+#submitBtn{
+    margin-top: 1vh;
+    background-color: transparent;
+    font-family: Rubik;
+    color: #212121;
+    border-radius: 0.4vw;
+    height: 4vh;
+    line-height: 2vh;
+    font-size: 1.5vh;
+    outline: none;
+    border: #212121 1px solid;
+    transition: .1s;
+    float: right;
+    cursor: pointer;
+    padding: 0.5vh 1vh 0.5vh 1vh;
+}
+#submitBtn:hover{
+    background-color: #67c480;
+    transition: .1s;
+}
+#submitBtn:active{
+    background-color: #3d774d;
+    transition: .1s;
+}
+#forgot-pswd-prompt{
+    cursor: pointer;
+    color: #519cd9;
+    font-size: 1.2vh;
+    transition: .1s;
+}
+#forgot-pswd-prompt:hover{
+    color: #3a91d8;
+    transition: .1s;
+}
+#forgot-pswd-prompt:active{
+    color: #1682db;
+    transition: .1s;
+}
+.sq{
+    display: none;
+    height: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
