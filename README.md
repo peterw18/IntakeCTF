@@ -97,7 +97,7 @@ This information is available on LinkedIn, where Maxwell recounts fond memories 
 
 #### One-time Passcode
 This is the tricky one! It says in one of the LinkedIn posts that Maxwell would only give away his MFA token to Barry Langton, his head of IT support, and only if he contacted him directly and could verify his identity.
-The aim of this section was to contact Maxwell, either through Facebook Messenger, LinkedIn, or X and impersonate Barry to get Maxwell to give up his MFA token. This required stating who you were, fabricating a realistic context, and providing a fake id for Barry.
+The aim of this section was to contact Maxwell, either through Facebook Messenger, LinkedIn, or X and impersonate Barry to get Maxwell to give up his MFA token. This required stating who you were, fabricating a realistic context, and providing a fake id for Barry. For anyone who wishes to attempt this challenge, the OTP is 266466.
 
 #### Logging In
 You must then log in with all the information and the email given for Maxwell Mitchell on the website to receive the flag.
