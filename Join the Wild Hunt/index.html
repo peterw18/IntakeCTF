@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+
+  <title>Join the Wild Hunt</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- connect to google fonts for custom font :) -->
+
+</head>
+<body>
+
+  <div id="container">
+
+    <h1 class="title" id="jtwh">Join the Wild Hunt!</h1>
+    <!-- title -->
+
+    <canvas id = 'canvas' class="child" tabindex = '0'></canvas>
+    <script src="./game.js"></script>
+    <!-- game canvas and javascript -->
+
+    <div id="leaderboard" class="child">
+      <h2 class="title">Leaderboard</h2><hr color="whitesmoke" />
+
+      <table id="scores">
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td class="leaderboardName">Tessa</td>
+          <td>134890</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td class="leaderboardName">Nellie</td>
+          <td>126770</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td class="leaderboardName">Keith</td>
+          <td>124490</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td class="leaderboardName">Jay</td>
+          <td>108320</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td class="leaderboardName">Ellis</td>
+          <td>102800</td>
+        </tr>
+      </table>
+
+      <button class="Btn" id="saveBtn" onclick="finishEditing()">Save</button>
+      <!-- save button that is hidden by default, to be used by admins editing the leaderboard manually -->
+
+    </div>
+  </div>
+
+  <button class="Btn" id="editBtn" onclick="editLeaderboard()">Edit Leaderboard</button>
+  <!-- edit leaderboard button for admins -->
+
+
+  <div id="responseModal" class="modal">
+    <div id="response-modal-content">
+      <span class="close" id="responseClose">&times;</span>
+      <p id="responseText"></p>
+    </div>
+  </div>
+  <!-- modal to display information from the server -->
+
+  <div id="alert-modal-content">
+    <img src="./assets/warning-icon.png" id="alertIcon" class="child"/>
+    <p class="child" id="alertText"><b>ALERT</b>: our servers are not currently updating leaderboard scores automatically.</p>
+    <span class="close child" id="alertClose">&times;</span>
+  </div>
+  <!-- maintenance warning for users that leaderboard is not updating automatically -->
+
+
+  <div id="footer">
+    <p>&copy; Warwick Cyber Security Society, 2024<br>Produced by <a href="https://www.linkedin.com/in/peterw18/">Peter Walker</a> for Intake CTF 2024<br>
+    <a target="_blank" href="https://icons8.com/icon/16251/error">Warning</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+  </div>
+  <!-- footer, containing credits-->
+
+  <script src="./script.js"></script>
+  <!-- final javascript link -->
+</body>
+</html>
